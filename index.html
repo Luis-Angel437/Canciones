@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RHead Music</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>
+    <img src="img/osito_radiohead-removebg-preview.png" alt="logo" id="logo">
+    RHead Music
+</h1>
+        <p>Tu espacio para almacenar tus canciones especiales</p>
+    </header>
+
+    <main>
+
+        <section class="upload-section">
+
+            <h2>Agregar canción</h2>
+
+            <input
+                type="text"
+                id="nombreCancion"
+                placeholder="Nombre de la canción">
+
+            <input
+                type="file"
+                id="archivoMp3"
+                accept=".mp3,audio/mpeg">
+
+            <button id="btnSubir">
+                Guardar Canción
+            </button>
+
+        </section>
+
+        <section class="music-list">
+
+            <h2>Biblioteca Musical</h2>
+
+            <div id="listaCanciones"></div>
+
+        </section>
+
+    </main>
+
+   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+   <script src="JAVASCR/supabase.js"></script>
+   <script src="JAVASCR/app.js"></script>
+</body>
+
+</html>
